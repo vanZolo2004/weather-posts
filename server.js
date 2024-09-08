@@ -5,7 +5,7 @@ const bodyParser = require("body-parser");
 require("dotenv").config({ path: "./config/.env" });
 const app = express();
 
-app.engine("html", require(ejs).renderfile);
+app.engine("html", require('ejs').renderFile);
 
 app.set("view engine", "html");
 app.set("layout", "layouts/layout");
